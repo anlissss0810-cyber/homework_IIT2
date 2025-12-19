@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fcfcfc; /* Голубой фон */
+  color: #0e1f5f;
+}
+
+header {
+  background-color: #eecbaf; /* Синий фон */
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+}
+/* Сделать подвал фиксированным внизу */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #eecbaf; /* синий фон */
+  color: #0e1f5f;
+  text-align: center;
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+nav {
+  background-color: #0e1f5f; /* Тёмно-синий */
+  padding: 10px;
+}
+
+nav a {
+  color: #f5f6f9;
+  text-decoration: none;
+  margin-right: 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #ffcc00;
+}
+
+.container {
+  display: flex;            /* Основное и боковое в ряд */
+  gap: 20px;
+  padding: 20px;
+}
+
+main {
+  flex: 3;
+}
+
+aside {
+  flex: 1;
+  background-color: #f0f8ff;
+  padding: 20px;
+  border-radius: 10px;
+  min-width: 220px;
+}
+
+/* Фото в ряд */
+.photo-gallery {
+  display: flex;            /* в ряд */
+  flex-wrap: wrap;          /* перенос при нехватке места */
+  gap: 15px;                /* отступы */
+}
+
+.photo-gallery img {
+  width: 500px;
+  height: 200xp;
+  object-fit: cover;        /* обрезка без искажения */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px #0e1f5f(0,0,0,0.2);
+  display: block;
+}
+audio, video {
+  display: block;
+  margin: 10px 0;
+  max-width: 100%;
+}
+
+h1, h2, h3 {
+  color: #0e1f5f;
+}
